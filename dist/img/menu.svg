@@ -1,0 +1,17 @@
+<svg
+        width="34"
+        height="34"
+        viewBox="0 0 34 34"
+        fill="currentColor"
+        class="header__menu-img"
+      >
+        <rect width="34" height="34" rx="9.27273" fill="currentColor" />
+        <path d="M11 12H23H11ZM11 17H23H11ZM11 21H16H11Z" fill="currentColor" />
+        <path
+          d="M11 22H23M11 12H23H11ZM11 17H23H11Z"
+          stroke="white"
+          stroke-width="1.54545"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        />
+      </svg>
