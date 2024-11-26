@@ -1,0 +1,16 @@
+.toTop {
+  position: fixed;
+  bottom: 40px;
+  right: 32px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  background-color: rgba(4, 45, 136, 1);
+  border: 2px solid rgba(255, 255, 255, 1);
+  box-sizing: border-box;
+  cursor: pointer;
+  z-index: 1000;
+}

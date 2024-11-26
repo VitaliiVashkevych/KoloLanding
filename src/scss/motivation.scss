@@ -1,0 +1,206 @@
+.motivation {
+  padding-top: 96px;
+  background: rgba(243, 243, 243, 1);
+  padding-bottom: 172px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  @include on-mobile {
+    padding-bottom: 80px;
+  }
+  &__container {
+    position: relative;
+    width: 100%;
+
+    @include motivation-tablet {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 497px;
+    padding-left: 20px;
+    gap: 8px;
+
+    @include on-mobile {
+      padding-left: 0;
+      width: 100%;
+    }
+  }
+  &__title {
+    font-size: 50px;
+    color: rgba(4, 45, 136, 1);
+    position: relative;
+    @include on-tablet {
+      font-size: 40px;
+    }
+    @include on-mobile {
+      font-size: 30px;
+    }
+
+    &::after {
+      content: "";
+      width: 500%;
+      height: 1px;
+      background: rgba(4, 45, 136, 1);
+      display: flex;
+      position: absolute;
+      top: 55%;
+      left: 82%;
+
+      @include motivation-tablet {
+        display: none;
+      }
+    }
+  }
+  &__text {
+    font-size: 20px;
+    color: rgba(4, 45, 136, 1);
+    @include on-mobile {
+      font-size: 15px;
+    }
+  }
+
+  &__list {
+    margin-top: 90px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 30px;
+
+    @include motivation-tablet {
+      grid-template-columns: 1fr;
+    }
+
+    @include on-mobile {
+      margin-top: 40px;
+    }
+  }
+
+  &__item:nth-child(even) {
+    justify-self: end;
+
+    @include motivation-tablet {
+      justify-self: center;
+    }
+  }
+
+  &__item {
+    @include motivation-tablet {
+      justify-self: center;
+    }
+  }
+  &__icon {
+    width: 40px;
+    height: 35px;
+  }
+  &__image {
+    @include on-mobile {
+      width: 100%;
+    }
+  }
+  &__logo-icon {
+    width: 44px;
+    height: 44px;
+    position: absolute;
+    top: 0;
+    transform: translate(0, -20px);
+
+    @include motivation-tablet {
+      position: initial;
+    }
+
+    path {
+      fill: rgba(4, 45, 136, 1);
+    }
+  }
+  &__button {
+    position: absolute;
+    transform: translate(0, 47%);
+    bottom: 0;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: none;
+    font-size: 15px;
+    color: rgba(0, 71, 187, 1);
+    background: rgba(255, 228, 51, 1);
+    line-height: 1;
+
+    @include hover {
+      box-shadow: 0px 0px 0px 3px rgba(205, 213, 231, 1);
+    }
+  }
+
+  &__item-title {
+    font-size: 25px;
+    margin-top: 10px;
+    color: rgba(4, 45, 136, 1);
+
+    @include on-tablet {
+      font-size: 20px;
+    }
+    @include on-mobile {
+      font-size: 15px;
+    }
+  }
+  &__item-text {
+    font-size: 15px;
+    margin-top: 10px;
+    color: rgba(4, 45, 136, 1);
+
+    @include on-tablet {
+      font-size: 13px;
+    }
+    @include on-mobile {
+      font-size: 10px;
+    }
+  }
+}
+
+.item--wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 318px;
+  height: 182px;
+  background: rgba(255, 255, 255, 1);
+  border-radius: 30px;
+  padding: 26px 20px;
+  box-sizing: border-box;
+
+  @include on-mobile {
+    width: 100%;
+    padding: 16px 10px;
+  }
+}
+.motivation__image-border {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, 5px);
+  width: 456px;
+  height: 436px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  border-top: 1px dashed rgba(4, 45, 136, 1);
+  border-left: 1px dashed rgba(4, 45, 136, 1);
+  border-right: 1px dashed rgba(4, 45, 136, 1);
+  border-top-left-radius: 35%;
+  border-top-right-radius: 35%;
+
+  @include motivation-tablet {
+    transform: initial;
+    position: initial;
+    margin-top: 40px;
+  }
+
+  @include on-mobile {
+    width: calc(100% - 40px);
+    height: max-content;
+  }
+}

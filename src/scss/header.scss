@@ -1,0 +1,122 @@
+.header {
+  background-color: rgba(253, 253, 253, 1);
+  position: fixed;
+  width: 100%;
+  z-index: 1000;
+  transition: all 1s !important;
+  display: flex;
+  justify-content: center;
+
+  &--scrolled {
+    background-color: rgba(233, 233, 233, 1);
+  }
+  & &__container {
+    display: flex;
+    align-items: center;
+    padding: 36px 100px;
+    justify-content: space-between;
+    width: 100%;
+
+    @media (max-width: 1024px) {
+      padding: 26px 60px;
+    }
+
+    @include on-tablet {
+      padding: 16px 20px;
+    }
+  }
+  &__menu-img {
+    height: 50px;
+    width: 50px;
+    @include on-tablet {
+      height: 40px;
+      width: 40px;
+    }
+
+    @include on-mobile {
+      height: 30px;
+      width: 30px;
+    }
+  }
+  &__buttons {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    @include header-tablet {
+      display: none;
+    }
+  }
+  &__logo {
+    height: 50px;
+    width: 50px;
+    color: initial;
+
+    @include on-tablet {
+      height: 40px;
+      width: 40px;
+    }
+
+    @include on-mobile {
+      height: 30px;
+      width: 30px;
+    }
+
+    svg path {
+      fill: rgba(4, 45, 136, 1);
+    }
+
+    @include hover {
+      transform: scale(1.2);
+    }
+  }
+  &__button {
+    font-size: 18px;
+    border-radius: 30px;
+    width: 151px;
+    height: 35px;
+    border: none;
+    background: rgba(4, 45, 136, 1);
+    color: rgba(253, 253, 253, 1);
+
+    @include hover {
+      box-shadow: 0px 0px 0px 3px rgba(155, 171, 207, 1);
+    }
+  }
+  &__menu {
+    display: none;
+    @include header-tablet {
+      display: block;
+    }
+  }
+}
+.nav {
+  &__list {
+    display: flex;
+    list-style: none;
+    gap: 50px;
+    @media (max-width: 1200px) {
+      gap: 30px;
+      transform: initial;
+    }
+    @include header-tablet {
+      display: none;
+    }
+    transform: translateX(78px);
+  }
+  &__link {
+    text-decoration: none;
+    font-size: 20px;
+    color: rgba(0, 43, 112, 1);
+
+    &:visited {
+      color: rgba(0, 43, 112, 1);
+    }
+    @include hover {
+      opacity: 0.6;
+    }
+  }
+}
+
+.dropdown {
+  font-size: 20px;
+}

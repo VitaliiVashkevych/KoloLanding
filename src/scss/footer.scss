@@ -1,0 +1,201 @@
+.footer {
+  background: rgba(243, 243, 243, 1);
+  padding-top: 70px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 75px;
+
+  @include on-tablet {
+    padding-top: 0;
+  }
+
+  &__icon {
+    @include hover {
+      opacity: 0.6;
+    }
+  }
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    box-sizing: border-box;
+    max-width: 1640px !important;
+
+    @include on-tablet {
+      flex-direction: column;
+      row-gap: 40px;
+    }
+
+    &:last-child {
+      background: rgba(4, 45, 136, 1);
+    }
+  }
+  &__wrapper-logo {
+    display: flex;
+    align-items: center;
+    column-gap: 16px;
+    height: 60px;
+    transform: translateY(-10px);
+
+    @include on-tablet {
+      transform: initial;
+    }
+  }
+  &__logo {
+    width: 60px;
+
+    path {
+      fill: rgba(4, 45, 136, 1);
+    }
+  }
+  &__text {
+    font-size: 18px;
+    margin-bottom: 6px;
+    color: rgba(4, 45, 136, 1);
+
+    @include on-tablet {
+      font-size: 16px;
+    }
+    &--accent {
+      font-weight: 900;
+    }
+  }
+  &__wrapper-links {
+    display: flex;
+    flex-direction: column;
+    row-gap: 12px;
+    transform: translateX(-34px);
+
+    @include on-tablet {
+      transform: initial;
+    }
+  }
+  &__link {
+    font-size: 20px;
+    color: rgba(0, 43, 112, 1);
+    text-decoration: none;
+
+    @include on-tablet {
+      font-size: 16px;
+    }
+
+    @include hover {
+      opacity: 0.6;
+    }
+  }
+  &__wrapper-contacts {
+    display: flex;
+    flex-direction: column;
+    row-gap: 12px;
+    transform: translateX(-19px);
+
+    @include on-tablet {
+      transform: initial;
+    }
+  }
+  &__contacts {
+    font-size: 20px;
+    color: rgba(0, 43, 112, 1);
+
+    @include on-tablet {
+      font-size: 16px;
+    }
+    @include hover {
+      opacity: 0.6;
+    }
+  }
+  &__wrapper-icons {
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    column-gap: 20px;
+
+    @include on-tablet {
+      margin-top: 20px;
+    }
+  }
+  &__wrapper-buttons {
+    display: flex;
+    flex-direction: column;
+    row-gap: 14px;
+  }
+  &__button {
+    font-size: 18px;
+    height: 45px;
+    border-radius: 30px;
+    padding-right: 32px;
+    padding-left: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid rgba(4, 45, 136, 1);
+
+    @include on-tablet {
+      font-size: 16px;
+    }
+    @include hover {
+      box-shadow: 0px 0px 0px 3px rgba(205, 213, 231, 1);
+    }
+    &--support {
+      background: rgba(255, 255, 255, 1);
+      color: rgba(4, 45, 136, 1);
+    }
+    &--documents {
+      background: rgba(4, 45, 136, 1);
+      color: rgba(255, 255, 255, 1);
+    }
+  }
+
+  &__wrapper--createdby {
+    background: rgba(4, 45, 136, 1);
+    padding-top: 20px;
+    padding-bottom: 20px;
+    width: 100%;
+
+  }
+
+  &__createdby {
+    font-size: 16px;
+    color: rgba(255, 255, 255, 1);
+
+    @include on-tablet {
+      font-size: 14px;
+    }
+    @include on-mobile {
+      font-size: 12px;
+    }
+    &-container {
+      display: flex;
+      justify-content: space-between;
+      flex-direction: row;
+      align-items: center;
+      box-sizing: border-box;
+
+      @include on-mobile {
+        flex-direction: column;
+        row-gap: 10px;
+      }
+    }
+    &-rights {
+      font-size: 16px;
+      color: rgba(255, 255, 255, 1);
+
+      @include on-tablet {
+        font-size: 14px;
+      }
+      @include on-mobile {
+        font-size: 12px;
+      }
+    }
+  }
+  &__wrapper--ficus {
+    display: flex;
+    align-items: center;
+    column-gap: 20px;
+    @include on-mobile {
+      column-gap: 12px;
+    }
+  }
+}

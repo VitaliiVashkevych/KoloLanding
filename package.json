@@ -1,0 +1,45 @@
+{
+  "name": "ukraineneedyougulp",
+  "version": "1.0.0",
+  "main": "gulpfile.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "aos": "^3.0.0-beta.6",
+    "countup.js": "^2.8.0",
+    "gulp-cli": "^2.3.0",
+    "swiper": "^11.1.14"
+  },
+  "devDependencies": {
+    "browser-sync": "^3.0.3",
+    "del": "^7.1.0",
+    "gulp": "^5.0.0",
+    "gulp-autoprefixer": "^9.0.0",
+    "gulp-clean-css": "^4.3.0",
+    "gulp-copy": "^5.0.0",
+    "gulp-file-include": "^2.3.0",
+    "gulp-fonter": "^0.3.0",
+    "gulp-group-css-media-queries": "^1.2.2",
+    "gulp-imagemin": "^9.1.0",
+    "gulp-newer": "^1.4.0",
+    "gulp-notify": "^5.0.0",
+    "gulp-plumber": "^1.2.1",
+    "gulp-rename": "^2.0.0",
+    "gulp-replace": "^1.1.4",
+    "gulp-sass": "^5.1.0",
+    "gulp-ttf2woff2": "^5.0.0",
+    "gulp-version-number": "^0.2.4",
+    "gulp-webp": "^5.0.0",
+    "gulp-webp-html-nosvg": "^1.1.1",
+    "gulp-webpcss": "^1.1.1",
+    "sass": "^1.79.3",
+    "webp-converter": "^2.2.3",
+    "webpack": "^5.95.0",
+    "webpack-stream": "^7.0.0"
+  }
+}

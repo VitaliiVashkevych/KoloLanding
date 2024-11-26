@@ -1,0 +1,191 @@
+.ways {
+  background: rgba(243, 243, 243, 1);
+  padding-top: 143px;
+  width: 100%;
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+
+  @include on-mobile {
+    padding-top: 50px;
+  }
+  &__container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    box-sizing: border-box;
+    max-width: 1640px !important;
+
+    @media (max-width: 1439px) {
+      flex-direction: column;
+      align-items: center;
+      gap: 50px;
+    }
+
+    &--summary {
+      width: 100%;
+      box-sizing: border-box;
+      max-width: 1640px !important;
+    }
+  }
+  &__wrapper {
+    max-width: 499px;
+    margin-top: 80px;
+
+    @media (max-width: 1439px) {
+      margin-top: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: start;
+    }
+  }
+  &__item {
+    width: 287px;
+    height: 205px;
+    border-radius: 30px;
+    box-sizing: border-box;
+    padding-top: 27px;
+    padding-left: 24px;
+    &:nth-child(1) {
+      color: rgba(255, 255, 255, 1);
+      background: rgba(4, 45, 136, 1);
+    }
+    &:nth-child(4) {
+      color: rgba(255, 255, 255, 1);
+      background: rgba(4, 45, 136, 1);
+    }
+    &:nth-child(2) {
+      color: rgba(4, 45, 136, 1);
+      background: rgba(255, 255, 255, 1);
+    }
+    &:nth-child(3) {
+      color: rgba(4, 45, 136, 1);
+      background: rgba(255, 255, 255, 1);
+    }
+
+    @include on-tablet {
+      color: rgba(255, 255, 255, 1) !important;
+      background: rgba(4, 45, 136, 1) !important;
+    }
+    &-title {
+      font-size: 25px;
+
+      @include on-tablet {
+        font-size: 20px;
+      }
+      @include on-mobile {
+        font-size: 15px;
+      }
+    }
+    &-text {
+      font-size: 18px;
+      margin-top: 10px;
+      line-height: 22px;
+
+      @include on-tablet {
+        font-size: 15px;
+      }
+      @include on-mobile {
+        font-size: 13px;
+      }
+    }
+  }
+
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    column-gap: 28px;
+    row-gap: 30px;
+
+    @media (max-width: 1439px) {
+      justify-content: center;
+    }
+    @include on-tablet {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+  &__title {
+    font-size: 50px;
+    letter-spacing: 0.005em;
+    color: rgba(4, 45, 136, 1);
+    text-align: start;
+    width: 100%;
+
+    @include on-mobile {
+      font-size: 30px;
+    }
+  }
+  &__text {
+    font-size: 20px;
+    margin-top: 12px;
+    color: rgba(4, 45, 136, 1);
+
+    @include on-mobile {
+      font-size: 15px;
+    }
+  }
+  &__button {
+    width: 182px;
+    height: 52px;
+    margin-top: 20px;
+    font-size: 15px;
+    border: none;
+    border-radius: 30px;
+    background-color: rgba(255, 228, 51, 1);
+    color: rgba(4, 45, 136, 1);
+
+    @include on-mobile {
+      width: 100%;
+    }
+
+    @include hover {
+      box-shadow: 0px 0px 0px 3px rgba(205, 213, 231, 1);
+    }
+  }
+  &__summary {
+    height: 182px;
+    display: flex;
+    flex-direction: row;
+    background: rgba(4, 45, 136, 1);
+    margin-top: 150px;
+    width: 100%;
+    border-radius: 30px;
+    align-items: center;
+    justify-content: space-between;
+    overflow: hidden;
+
+    @include on-tablet {
+      margin-top: 50px;
+    }
+    &-logo {
+      width: 180px;
+      height: 180px;
+      transform: translateX(-48px);
+
+      path {
+        fill: rgba(255, 255, 255, 0.5);
+      }
+
+      @include on-mobile {
+        width: 80px;
+        height: 80px;
+        transform: initial;
+      }
+    }
+    &-text {
+      font-size: 25px;
+      text-align: end;
+      color: rgba(255, 255, 255, 1);
+      letter-spacing: 0.004em;
+      margin-right: 30px;
+
+      @include on-mobile {
+        font-size: 15px;
+      }
+    }
+  }
+}

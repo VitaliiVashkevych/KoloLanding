@@ -1,0 +1,250 @@
+.howToHelp {
+  padding-top: 128px;
+  background: rgba(243, 243, 243, 1);
+  width: 100%;
+  display: flex;
+  justify-content: center;
+
+  &__container {
+    width: 100%;
+    box-sizing: border-box;
+    max-width: 1640px !important;
+  }
+
+  @include on-tablet {
+    padding-top: 50px;
+  }
+  &__title {
+    font-size: 50px;
+    line-height: 48px;
+    width: 60%;
+    color: rgba(4, 45, 136, 1);
+    letter-spacing: 0.004em;
+
+    @include on-tablet {
+      font-size: 40px;
+      line-height: 40px;
+    }
+
+    @include on-tablet {
+      font-size: 30px;
+      width: 100%;
+      text-align: center;
+      line-height: 30px;
+    }
+  }
+  &__wrapper--buttons {
+    display: flex;
+    margin-top: 34px;
+    gap: 22px;
+
+    @include on-tablet {
+      flex-direction: column;
+    }
+  }
+  &__button--support {
+    font-size: 16px;
+    height: 45px;
+    box-sizing: border-box;
+    border: 1px solid rgba(4, 45, 136, 1);
+    border-radius: 30px;
+    background: rgba(255, 228, 51, 1);
+    padding-left: 28px;
+    padding-right: 30px;
+    letter-spacing: 0.01em;
+    border: none;
+    color: rgba(4, 45, 136, 1);
+
+    @include hover {
+      box-shadow: 0px 0px 0px 3px rgba(205, 213, 231, 1);
+    }
+  }
+  &__button--details {
+    font-size: 16px;
+    height: 45px;
+    box-sizing: border-box;
+    border: 1px solid rgba(4, 45, 136, 1);
+    border-radius: 30px;
+    background: rgba(255, 255, 255, 1);
+    padding-left: 28px;
+    padding-right: 30px;
+    letter-spacing: 0.025em;
+    border: 1px solid rgba(4, 45, 136, 1);
+    color: rgba(4, 45, 136, 1);
+    @include hover {
+      box-shadow: 0px 0px 0px 3px rgba(205, 213, 231, 1);
+    }
+  }
+  &__props {
+    background: rgba(4, 45, 136, 1);
+    margin-top: 40px;
+    border-radius: 30px;
+    padding: 36px 36px 42px 32px;
+    box-sizing: border-box;
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+
+    @include on-tablet {
+      flex-direction: row;
+      justify-content: space-between;
+    }
+    &--item {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      row-gap: 16px;
+      @include on-tablet {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        gap: 16px;
+        width: fit-content;
+      }
+    }
+
+    &--text {
+      font-size: 20px;
+      color: rgba(255, 255, 255, 1);
+
+      @include on-mobile {
+        font-size: 12px;
+      }
+    }
+    &--text:nth-child(odd) {
+      @include on-mobile {
+        font-size: 14px;
+      }
+    }
+    &--text:nth-child(even) {
+      text-align: end;
+
+      @include on-tablet {
+        text-align: start;
+        padding-left: 16px;
+      }
+    }
+    &--text:nth-child(even):before {
+      content: url("../img/howToHelpCopy.svg");
+      position: absolute;
+      width: 15px;
+      height: 20px;
+      transform: translateX(-32px);
+    }
+  }
+
+  &__post {
+    margin-top: 88px;
+    &-title {
+      font-size: 50px;
+      color: rgba(4, 45, 136, 1);
+      line-height: 0.9;
+
+      @include on-tablet {
+        font-size: 40px;
+      }
+      @include on-mobile {
+        font-size: 30px;
+        text-align: center;
+      }
+      &--emoji {
+        font-size: 25px;
+        padding-left: 10px;
+      }
+    }
+
+    &-text {
+      margin-top: 32px;
+      font-size: 20px;
+      color: rgba(4, 45, 136, 1);
+
+      @include on-mobile {
+        font-size: 16px;
+      }
+      &--gap {
+        display: block;
+        margin-top: 20px;
+      }
+      &--link {
+        text-decoration: underline;
+      }
+    }
+
+    &-wrapper--address {
+      display: flex;
+      flex-direction: row;
+      column-gap: 30px;
+      margin-top: 48px;
+
+      @include on-tablet {
+        flex-direction: column;
+        align-items: center;
+        row-gap: 30px;
+      }
+    }
+    &-address-eu {
+      background: rgba(4, 45, 136, 1);
+      border-radius: 30px;
+      width: 50%;
+      padding-top: 40px;
+      padding-left: 40px;
+      padding-bottom: 30px;
+      position: relative;
+      overflow: hidden;
+
+      @include on-mobile {
+        width: 100%;
+        padding-top: 20px;
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-bottom: 10px;
+        box-sizing: border-box;
+      }
+
+      &::before {
+        content: url("../img/logo103.svg");
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        transform: translate(12px, 20px);
+      }
+    }
+    &-address-others {
+      background: rgba(4, 45, 136, 1);
+      border-radius: 30px;
+      width: 50%;
+      padding-top: 40px;
+      padding-left: 40px;
+      padding-bottom: 30px;
+
+      @include on-mobile {
+        width: 100%;
+        padding-top: 20px;
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-bottom: 10px;
+        box-sizing: border-box;
+      }
+    }
+    &-address-title {
+      font-size: 25px;
+      line-height: 1.1;
+      color: rgba(255, 255, 255, 1);
+      margin-bottom: 16px;
+
+      @include on-mobile {
+        font-size: 20px;
+        text-align: center;
+      }
+    }
+    &-address-text {
+      font-size: 20px;
+      line-height: 34px;
+      color: rgba(255, 255, 255, 1);
+
+      @include on-mobile {
+        font-size: 16px;
+        line-height: 28px;
+      }
+    }
+  }
+}

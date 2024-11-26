@@ -1,0 +1,46 @@
+@mixin on-tablet {
+  @media (max-width: 768px) {
+    @content;
+  }
+}
+@mixin header-tablet {
+  @media (max-width: 960px) {
+    @content;
+  }
+}
+@mixin on-mobile {
+  @media (max-width: 480px) {
+    @content;
+  }
+}
+@mixin motivation-tablet {
+  @media (max-width: 1306px) {
+    @content;
+  }
+}
+@mixin partners-tablet {
+  @media (max-width: 1400px) {
+    @content;
+  }
+}
+
+@mixin ourProjects-tablet {
+  @media (max-width: 935px) {
+    @content;
+  }
+}
+
+@mixin results-tablet {
+  @media (max-width: 1430px) {
+    @content;
+  }
+}
+
+@mixin hover {
+  @media (hover: hover) {
+    transition: all 0.3s;
+    &:hover {
+      @content;
+    }
+  }
+}

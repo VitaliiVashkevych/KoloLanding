@@ -1,0 +1,118 @@
+.partners {
+  background: rgba(4, 45, 136, 1);
+  height: 253px;
+  display: flex;
+  align-items: center;
+  box-sizing: border-box;
+  width: 100%;
+  justify-content: center;
+  background-image: url("../img/bgPartnerLines.svg");
+  &__container {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    align-items: center;
+    width: 100%;
+    @include partners-tablet {
+      flex-direction: column;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      width: 100%;
+    }
+  }
+  &__title {
+    color: rgba(255, 255, 255, 1);
+    font-size: 40px;
+    max-width: 400px;
+    line-height: 40px;
+    grid-column: 1 / 7;
+
+    @include partners-tablet {
+      font-size: 30px;
+      max-width: 100%;
+      margin-bottom: 30px;
+      line-height: 30px;
+      padding: 0 20px;
+    }
+  }
+  &__wrapper {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    grid-column: 7 / -1;
+    justify-self: end;
+    width: 696px;
+    column-gap: 28px;
+    row-gap: 32px;
+
+    @include partners-tablet {
+      flex-wrap: nowrap;
+      gap: 60px;
+      width: 100%;
+      overflow: hidden;
+    }
+  }
+  &__img {
+    max-width: 210px;
+    &-wrapper {
+      width: 210px;
+      height: 56px;
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      @include partners-tablet {
+        animation: slide 15s linear infinite;
+      }
+      &-tablet {
+        display: none;
+
+        @include partners-tablet {
+          display: flex;
+        }
+      }
+    }
+  }
+}
+
+@keyframes slide {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-1341px);
+  }
+}
+
+#partnersEva1,
+#partnersEva2 {
+  width: 112px;
+  height: 56px;
+}
+
+#partnersNP1,
+#partnersNP2 {
+  width: 127px;
+  height: 45px;
+}
+#partnersMCTU1,
+#partnersMCTU2 {
+  width: 209px;
+  height: 46px;
+}
+#partnersPresident,
+#partnersPresident2 {
+  width: 131px;
+  height: 39px;
+}
+#partnersMONU,
+#partnersMONU2 {
+  width: 208px;
+  height: 37px;
+}
+#partnersKMU,
+#partnersKMU2 {
+  width: 194px;
+  height: 40px;
+}

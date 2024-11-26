@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="uk">
+  @@include('html/head.html', { "title": "Document" })
+  <body id="root">
+    @@include('html/header.html')
+    <main>
+      @@include('html/menu.html') @@include('html/mainContent.html')
+      @@include('html/motivation.html') @@include('html/partners.html')
+      @@include('html/ways.html') @@include('html/ourProjects.html')
+      @@include('html/results.html') @@include('html/news.html')
+      @@include('html/howToHelp.html') @@include('html/photoreports.html')
+    </main>
+    @@include('html/footer.html')
+
+    <a href="#" class="toTop" aria-label="Наверх">
+      <svg
+        width="21"
+        height="12"
+        viewBox="0 0 21 12"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M1 10.2217L9.38346 1.83822C9.84646 1.37522 10.5971 1.37522 11.0601 1.83822L19.4436 10.2217"
+          stroke="white"
+          stroke-width="2"
+          stroke-linecap="round"
+        />
+      </svg>
+    </a>
+    <script src="js/app.min.js"></script>
+  </body>
+</html>
